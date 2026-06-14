@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ATS-Friendly Resume — Your Name</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Minimal print-friendly layout for ATS parsing -->
+  <style>
+    /* Inline critical resume styles to ensure single-file readability and print friendliness */
+    body{ font-family: Arial, Helvetica, sans-serif; color:#111; margin:0; padding:1rem; background:#fff; }
+    header{ display:flex; justify-content:space-between; align-items:flex-start; gap:1rem; }
+    h1{ margin:0; font-size:1.4rem; }
+    .contact{ text-align:right; font-size:0.95rem; }
+    section{ margin-top:1rem; }
+    h2{ font-size:1rem; margin:0 0 0.25rem 0; }
+    ul{ margin:0; padding-left:1.1rem; }
+    .job{ margin-bottom:0.75rem; }
+    .muted{ color:#444; font-size:0.95rem; }
+
+    /* Print optimizations: remove background, tighten spacing */
+    @media print{
+      body{ margin:0; padding:0.6in; color:#000; }
+      header{ display:block; }
+      .contact{ text-align:right; }
+      a{ color:inherit; text-decoration:none; }
+      /* Avoid cutting content under headers/footers */
+      footer{ page-break-after:avoid; }
+    }
+  </style>
+</head>
+<body>
+  <!-- ATS-friendly structure: clear headings, simple lists, no complex layout -->
+  <header>
+    <div>
+      <h1>Your Name</h1>
+      <p class="muted">Frontend Developer — yourlocation@example.com — (555) 555-5555</p>
+    </div>
+    <div class="contact">
+      <p>github.com/yourname</p>
+      <p>linkedin.com/in/yourname</p>
+    </div>
+  </header>
+
+  <section>
+    <h2>Professional Summary</h2>
+    <p>Concise, keyword-rich summary highlighting experience, primary technologies, and measurable outcomes. Keep to 2-3 sentences for ATS clarity.</p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML5, CSS3, Responsive Design, Accessibility (WCAG)</li>
+      <li>Design systems, Prototyping, Usability testing</li>
+      <li>Version control: Git; Collaboration and documentation</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <!-- Each job is plain text with dates and bullets to help ATS parse -->
+    <div class="job">
+      <strong>Frontend Developer — Company Name</strong>
+      <div class="muted">Jan 2022 — Present</div>
+      <ul>
+        <li>Built and maintained responsive web interfaces using semantic HTML and CSS, improving load times and accessibility scores.</li>
+        <li>Collaborated with designers and engineers to ship features that increased user engagement by X%.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <strong>Web Developer — Previous Company</strong>
+      <div class="muted">Jun 2020 — Dec 2021</div>
+      <ul>
+        <li>Converted design prototypes into production-ready markup and styles, producing consistent cross-browser results.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <p><strong>Degree Name</strong> — University Name, Year</p>
+  </section>
+
+  <section>
+    <h2>Projects & Highlights</h2>
+    <ul>
+      <li>TaskMaster — To-do app (responsive UI, accessibility improvements)</li>
+      <li>Budget Buddy — Finance tracker (design, UX improvements)</li>
+    </ul>
+  </section>
+
+  <section style="margin-top:1rem; font-size:0.95rem; color:#333;">
+    <h2>Download / Print</h2>
+    <p>To save this resume as a PDF: open this page in your browser, choose <strong>File → Print</strong> (or press <strong>Ctrl+P</strong>), and select <strong>Save as PDF</strong> as the destination. Use the default margins for best results.</p>
+  </section>
+
+  <footer style="margin-top:1rem; font-size:0.9rem; color:#666;">Last updated: 2026</footer>
+</body>
+</html>

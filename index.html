@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Simple, clean site using only HTML and CSS -->
+</head>
+<body>
+
+  <!-- Sticky navigation bar -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <h1 class="brand">Okoye Harrison Chidozie</h1>
+      <nav>
+        <a href="#hero">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#prompts">Prompts</a>
+        <a href="resume.html" target="_blank">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main content area -->
+  <main>
+
+    <!-- Hero section with photo and CTA to resume -->
+    <section id="hero" class="hero container">
+      <!-- Use an SVG placeholder photo stored in images/photo.svg -->
+      <img src="images/my-photo.png" alt="Profile photo" class="hero-photo" />
+      <div class="hero-copy">
+        <h2>Hi, I Am Okoye Harrison Chidozie.</h2>
+        <p class="tagline">Full-Stack Developer ·AI Engineeer. Designer · Problem Solver</p>
+        <!-- Link to the ATS-compliant resume page; download attribute may prompt a save -->
+        <p class="cta">
+          <a class="btn" href="resume.html" target="_blank">View ATS Resume</a>
+          <a class="btn secondary" href="#projects">See Projects</a>
+        </p>
+      </div>
+    </section>
+
+        <!-- Project 4 -->
+        <article class="card">
+          <h3>Design System Kit</h3>
+          <p class="summary">High-level goal: Create a reusable UI system to speed up development and ensure consistency.</p>
+          <details>
+            <summary>Approach (Design → Code → Delivery)</summary>
+            <ol>
+              <li><strong>Design:</strong> Defined tokens, typography scale, spacing, and component anatomy.</li>
+              <li><strong>Code:</strong> Implemented style guidelines in CSS variables and component examples.</li>
+              <li><strong>Delivery:</strong> Created documentation pages and a starter template for other developers.</li>
+            </ol>
+          </details>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="card">
+          <h3>Accessibility Audit</h3>
+          <p class="summary">High-level goal: Improve accessibility across a legacy site to meet WCAG AA standards.</p>
+          <details>
+            <summary>Approach (Design → Code → Delivery)</summary>
+            <ol>
+              <li><strong>Design:</strong> Performed keyboard and screen-reader walkthroughs to find blockers.</li>
+              <li><strong>Code:</strong> Added semantic landmarks, ARIA where appropriate, and color-contrast fixes.</li>
+              <li><strong>Delivery:</strong> Supplied a prioritized remediation plan and verification checklist.</li>
+            </ol>
+          </details>
+        </article>
+
+    <!-- Projects section: each project has its own card with summary and process -->
+    <section id="projects" class="container projects">
+      <h2>Projects Completed in the Program</h2>
+      <p class="section-intro">Each card shows the problem, approach and delivery highlights.</p>
+
+      <div class="cards">
+        <!-- Project 1 -->
+        <article class="card">
+          <h3>TaskMaster — To-do Productivity App</h3>
+          <p class="summary">High-level goal: Help users manage daily tasks with priorities and due dates.</p>
+          <details>
+            <summary>Approach (Design → Code → Delivery)</summary>
+            <ol>
+              <li><strong>Design:</strong> Wireframes, user flow, simple accessible UI.</li>
+              <li><strong>Code:</strong> Built responsive HTML/CSS prototype; broke UI into components and used progressive enhancement for interactions.</li>
+              <li><strong>Delivery:</strong> User testing, iteration, and deployed as a static site.</li>
+            </ol>
+          </details>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="card">
+          <h3>Budget Buddy — Personal Finance Tracker</h3>
+          <p class="summary">High-level goal: Make it easy to track weekly spending and visualise trends.</p>
+          <details>
+            <summary>Approach (Design → Code → Delivery)</summary>
+            <ol>
+              <li><strong>Design:</strong> Low-fidelity mockups, focus on clarity and charts.</li>
+              <li><strong>Code:</strong> Semantic markup, responsive layout, CSV import plan (UI-only for program scope).</li>
+              <li><strong>Delivery:</strong> Documented user guide and handoff notes for future JS enhancement.</li>
+            </ol>
+          </details>
+        </article>
+
+        <!-- Project 3 (this portfolio itself) -->
+        <article class="card">
+          <h3>Personal Portfolio Site</h3>
+          <p class="summary">High-level goal: Present a clean, ATS-friendly portfolio showcasing skills and projects.</p>
+          <details>
+            <summary>Approach (Design → Code → Delivery)</summary>
+            <ol>
+              <li><strong>Design:</strong> Simple one-page layout with hero, projects, prompts, and contact area.</li>
+              <li><strong>Code:</strong> Pure HTML and CSS; accessible headings and lists; sticky header/footer.</li>
+              <li><strong>Delivery:</strong> Provided as static files ready to serve from any static host.</li>
+            </ol>
+          </details>
+        </article>
+      </div>
+    </section>
+
+    <!-- Prompts section: show the multiple prompts used to build the site -->
+    <section id="prompts" class="container prompts">
+      <h2>Prompts Used</h2>
+      <p class="section-intro">These are the prompts the assistant was given to produce this site.</p>
+      <ul>
+        <li>"Build a personal portfolio site using only HTML and CSS with a hero photo and sticky header/footer."</li>
+        <li>"Create an ATS-compliant resume/CV and link it to the hero section."</li>
+        <li>"Display the multiple prompts used and include project cards with design→code→delivery details."</li>
+        <li>"Keep files separate for use in VS Code and add comments to the code."</li>
+      </ul>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <p>Email: chidozieharrison28@gmail.com</p>
+      <p>GitHub: <a href="#">github.com/yourname</a></p>
+    </section>
+
+  </main>
+
+  <!-- Sticky footer (fixed to bottom) -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Your Name — Built with HTML & CSS.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
